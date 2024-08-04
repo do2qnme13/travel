@@ -1,0 +1,106 @@
+.singleDestination {
+  width: 300px;
+  height: auto;
+  background: var(--whiteColor);
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 3px rgba(162, 161, 161, 0.8);
+  overflow: hidden;
+
+  .imgDiv {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: 0.5s ease-in-out;
+      &:hover {
+        transform: scale(1.4);
+      }
+    }
+  }
+  .cardInfo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+
+    h4 {
+      font-size: 1.1rem;
+      color: rgb(13, 71, 58);
+    }
+
+    .continent {
+      width: 100%;
+      font-size: 0.8rem;
+      color: var(--greyText);
+      border-bottom: 1px solid var(--greyText);
+      padding-bottom: 1rem;
+
+      .icon {
+        font-size: 0.8rem;
+        color: var(--PrimaryColor);
+        margin-right: 5px;
+      }
+    }
+
+    .fees {
+      width: 100%;
+      justify-content: space-between;
+      font-size: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--greyText);
+
+      .grade {
+        span {
+          width: 10%;
+          display: flex;
+          align-items: flex-end;
+          font-size: 1rem;
+          line-height: 19px;
+          position: relative;
+          color: var(--greyText);
+
+          small {
+            background: var(--gradientColor);
+            color: var(--whiteColor);
+            padding: 0 10px;
+            font-size: 0.5rem;
+            font-weight: bold;
+            border-radius: 10px;
+            position: absolute;
+            left: 45px;
+          }
+        }
+      }
+
+      .price {
+        font-size: 1.5rem;
+        color: rgb(13, 71, 58);
+      }
+    }
+    .desc {
+      font-size: 0.78rem;
+      padding: 1rem 0;
+    }
+    .btn {
+      color: var(--whiteColor);
+      font-weight: 600;
+      font-size: 0.7rem;
+
+      &:hover {
+        background: var(--SecondaryColor);
+      }
+
+      .icon {
+        font-size: 1rem;
+      }
+    }
+  }
+}
